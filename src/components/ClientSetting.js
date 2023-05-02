@@ -17,7 +17,7 @@ export default class ClientSetting extends PureComponent {
               placeholder="Expiry date"
             />
           </div>
-          <div className="text-left m-6">
+          <div className="text-left m-6 mt-0">
             <label for="organization-size" className="text-gray-700">
               Max Organization Size
             </label>
@@ -29,7 +29,7 @@ export default class ClientSetting extends PureComponent {
               placeholder="Maximum organization size"
             />
           </div>
-          <div className="text-left m-6">
+          <div className="text-left m-6 mt-0">
             <label for="user-count" className="text-gray-700">
               Max User Count
             </label>
