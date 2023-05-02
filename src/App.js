@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Sidebar from "./components/Slidebar";
+import Navbar from "./components/Navbar";
+import DataTable from "./components/DataTable";
+import Settings from "./components/Settings";
+import Dashboard from "./components/Dashboard";
+import Alert from "./components/Alert";
+import ClientDetail from "./components/ClientDetail";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <div className="flex">
+          <div>
+            <Sidebar />
+          </div>
+          <div className="flex-grow">
+            <Navbar />
+            <Alert status="success" message="This is demo alert message" />
+            <Routes>
+              <Route path="/" element={<Dashboard />}></Route>
+              <Route
+                path="/clients"
+                element={<DataTable title="Client Requests" />}
+              ></Route>
+              <Route path="/client/detail" element={<ClientDetail />}></Route>
+              <Route path="/settings" element={<Settings />}></Route>
+            </Routes>
+          </div>
+        </div>
+      </Router>
     </div>
   );
 }
