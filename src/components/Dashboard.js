@@ -1,10 +1,10 @@
 import React from "react";
 function Index() {
   return (
-    <>
+    <div className="container w-full">
       {/* Card is full width. Use in 4 col grid for best view. */}
       {/* Card code block start */}
-      <div className="container w-full mx-auto mt-8">
+      <div className="mx-10 mt-8">
         <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           <div className="bg-white dark:bg-gray-800 rounded shadow p-6">
             <div className="flex items-center justify-between w-full sm:w-full mb-8">
@@ -212,7 +212,7 @@ function Index() {
         </div>
         {/* Card code block end */}
       </div>
-    </>
+    </div>
   );
 }
 export default Index;
