@@ -1,6 +1,6 @@
 import React, { PureComponent } from "react";
 import ClientSetting from "./ClientSetting";
-import ClientFullDetail from "./ClientFullDetail";
+import ClientFullDetail from "./ClientDetailOverview";
 
 export default class ClientDetail extends PureComponent {
   constructor() {
@@ -28,7 +28,7 @@ export default class ClientDetail extends PureComponent {
                 className={`rounded-t w-32 h-12 flex items-center justify-center ${this.state.detailBackgroundColor} text-sm text-gray-800 cursor-pointer`}
                 onClick={() => this.handleClick(false)}
               >
-                Details
+                Overview
               </li>
               <li
                 className={`rounded-t w-32 h-12 flex items-center justify-center ${this.state.settingBackgroundColor} mx-1 text-sm text-gray-800 cursor-pointer`}
