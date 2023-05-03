@@ -79,7 +79,7 @@ export default class ClientFullDetail extends PureComponent {
                 <p className="font-semibold">Ram Usage</p>
                 <p>3/4 GB</p>
               </div>
-              <div className="py-3">
+              <div className="border-b-2 py-3">
                 <p className="font-semibold">Storage Usage</p>
                 <p>25/30 GB</p>
               </div>
