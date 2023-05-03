@@ -141,7 +141,7 @@ function Index(props) {
                   <Chip status="Declined" />
                 </td>
                 <td className="">
-                  {show === 0 ? (
+                  {show === 1 ? (
                     <button
                       onClick={() => setShow(null)}
                       className="focus:outline-none"
@@ -178,7 +178,7 @@ function Index(props) {
                     </button>
                   ) : (
                     <button
-                      onClick={() => setShow(0)}
+                      onClick={() => setShow(1)}
                       className="focus:outline-none"
                     >
                       <svg
@@ -212,7 +212,7 @@ function Index(props) {
                       </svg>
                     </button>
                   )}
-                  {show === 0 && (
+                  {show === 1 && (
                     <div className="dropdown-content bg-white shadow w-24 absolute z-30 right-0 mr-16 ">
                       <div className="text-xs w-full hover:bg-green-700 py-4 px-4 cursor-pointer hover:text-white">
                         <p className="text-blue">Approve</p>
@@ -235,7 +235,7 @@ function Index(props) {
                   <Chip status="Stopped" />
                 </td>
                 <td className="">
-                  {show === 0 ? (
+                  {show === 2 ? (
                     <button
                       onClick={() => setShow(null)}
                       className="focus:outline-none"
@@ -272,7 +272,7 @@ function Index(props) {
                     </button>
                   ) : (
                     <button
-                      onClick={() => setShow(0)}
+                      onClick={() => setShow(2)}
                       className="focus:outline-none"
                     >
                       <svg
@@ -306,7 +306,7 @@ function Index(props) {
                       </svg>
                     </button>
                   )}
-                  {show === 0 && (
+                  {show === 2 && (
                     <div className="dropdown-content bg-white shadow w-24 absolute z-30 right-0 mr-16 ">
                       <div className="text-xs w-full hover:bg-green-700 py-4 px-4 cursor-pointer hover:text-white">
                         <p className="text-blue">Approve</p>
@@ -329,7 +329,7 @@ function Index(props) {
                   <Chip status="Unverified" />
                 </td>
                 <td className="">
-                  {show === 0 ? (
+                  {show === 3 ? (
                     <button
                       onClick={() => setShow(null)}
                       className="focus:outline-none"
@@ -366,7 +366,7 @@ function Index(props) {
                     </button>
                   ) : (
                     <button
-                      onClick={() => setShow(0)}
+                      onClick={() => setShow(3)}
                       className="focus:outline-none"
                     >
                       <svg
@@ -400,7 +400,7 @@ function Index(props) {
                       </svg>
                     </button>
                   )}
-                  {show === 0 && (
+                  {show === 3 && (
                     <div className="dropdown-content bg-white shadow w-24 absolute z-30 right-0 mr-16 ">
                       <div className="text-xs w-full hover:bg-green-700 py-4 px-4 cursor-pointer hover:text-white">
                         <p className="text-blue">Approve</p>
@@ -423,7 +423,7 @@ function Index(props) {
                   <Chip status="Approved" />
                 </td>
                 <td className="">
-                  {show === 0 ? (
+                  {show === 4 ? (
                     <button
                       onClick={() => setShow(null)}
                       className="focus:outline-none"
@@ -460,7 +460,7 @@ function Index(props) {
                     </button>
                   ) : (
                     <button
-                      onClick={() => setShow(0)}
+                      onClick={() => setShow(4)}
                       className="focus:outline-none"
                     >
                       <svg
@@ -494,7 +494,7 @@ function Index(props) {
                       </svg>
                     </button>
                   )}
-                  {show === 0 && (
+                  {show === 4 && (
                     <div className="dropdown-content bg-white shadow w-24 absolute z-30 right-0 mr-16 ">
                       <div className="text-xs w-full hover:bg-green-700 py-4 px-4 cursor-pointer hover:text-white">
                         <p className="text-blue">Approve</p>
