@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Chip from "./Chip";
+import Pagination from "./Pagination";
 
 function Index(props) {
   const [show, setShow] = useState(null);
@@ -510,6 +511,7 @@ function Index(props) {
           </table>
         </div>
       </div>
+      <Pagination />
     </>
   );
 }
